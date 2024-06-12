@@ -1,0 +1,128 @@
+:root {
+    --x: 1440px;
+    --y: 1024px;
+  }
+/* Login */
+body {/* Login */
+
+    position: relative;
+    width: 1152px;
+    height: 700px;
+    overflow-x: scroll;
+    
+    background: #EFFFEE;
+    
+}
+
+/* Frame 2 */
+
+/* Auto layout */
+#login-container {/* Frame 2 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 11px;
+    
+    position: absolute;
+    width: 872px;
+    height: 452px;
+    left: calc(50% - 872px/2);
+    top: 100px;
+    
+    
+}
+
+/* Frame 1 */
+#login-btn-div {/* Frame 1 */
+    cursor: pointer;
+    
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 180px;
+    height: 56px;
+    
+    /* buttons / primary */
+    background: #42E61C;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+#login-btn {/* Login with DAuth */
+
+    /* font-family: 'Noto Sans'; */
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+    
+    /* Login with DAuth */
+
+width: 160px;
+height: 36px;
+
+/* font-family: 'Noto Sans'; */
+font-style: normal;
+font-weight: 100;
+font-size: 15px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Black */
+color: #000000;
+
+/* Black */
+/* border: 1px solid #000000; */
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+    
+}
+
+#dauth-url {/* Do not have a DAuth account? */
+
+    width: 305px;
+    height: 30px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    
+    /* text */
+    color: #051502;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+}
