@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { Redirect } from "react-router-dom";
 import axios from "axios";
+import "./Home.css";
 
 class Home extends Component {
     constructor(props) {
@@ -103,18 +104,20 @@ class Home extends Component {
     render() {
         return (
             // this.state.queryExtracted ? <Redirect to="http://localhost:3000/home"/> : 
-            <div>
-                <h1>Home</h1>
-                {this.state.accessToken ?
-                <div>
-                    <button id="application-btn" onClick={this.handleApplication}>Send a new request</button>
-                    <br></br>
-                    <button id="pending-btn" onClick={this.handleClickPending}>Pending Requests</button>
-                    <br></br>
-                    <button id="past-btn" onClick={this.handleClickPast}>Past Requests</button>
-                    <br></br>
-                    <button id="settings-btn" onClick={this.handleSettings}>Auto-fill settings</button>
-                </div> 
+            <div id="wrapper">
+                {this.state.userObject ?
+                <div id="home-container">
+                    <h1>Welcome, {this.state.userObject.name}</h1>
+                    <div id="home-buttons-div">
+                        <button id="application-btn" onClick={this.handleApplication}>Send a new request</button>
+                        
+                        <button id="pending-btn" onClick={this.handleClickPending}>Pending Requests</button>
+                        
+                        <button id="past-btn" onClick={this.handleClickPast}>Past Requests</button>
+                        
+                        <button id="settings-btn" onClick={this.handleSettings}>Auto-fill settings</button>
+                    </div> 
+                </div>
                 : 
                 <p>Loading...</p>
                 }

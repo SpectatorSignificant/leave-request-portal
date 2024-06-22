@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./Form.css";
 
 class Form extends Component {
     constructor(props){
@@ -106,7 +107,7 @@ class Form extends Component {
 
     render() {
         return (
-          <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
+          <form id="application-form" onChange={this.handleChange} onSubmit={this.handleSubmit}>
               
             {this.state.userObject ?
                 <div>
@@ -153,7 +154,7 @@ class Form extends Component {
             <p>Reason:</p>
             <input id="reason" value={this.state.copyFromDB.reason} name='reason' type='text' required></input>
             <br></br>
-            <button type='submit'>Submit</button>
+            <button id="submit-btn" type='submit'>Submit</button>
 
           </form>
         );

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    /* Home */
+
+position: relative;
+width: 100vw;
+height: 100vh;
+
+background: #EFFFEE;
+
+font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#logout-btn {
+    /* Frame 3 */
+cursor: pointer;
+box-sizing: border-box;
+
+font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 70px;
+height: 35px;
+top: 0;
+right: 0;
+margin-right: 20px;
+margin-top: 20px;
+
+/* buttons / primary */
+background: #42E61C;
+border: 2px solid #000000;
+border-radius: 8px;
+
+}
+
+#home-container {
+    /* Frame 17 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3px 0px 0px;
+gap: 38px;
+
+/* position: absolute; */
+width: 810px;
+height: 664px;
+left: 315px;
+top: 134px;
+
+  /* Centering the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-container h1 {
+    /* Frame 16 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+margin-bottom: 0;
+
+width: 524px;
+height: 59px;
+
+/* position: relative;
+top: 5px; */
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+#home-buttons-div {
+    /* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 576px;
+height: 300px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+#home-buttons-div button {
+    /* Frame 5 */
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  /* font-style: normal; */
+
+/* font-weight: 600; */
+font-size: medium;
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+width: 200px;
+height: 60px;
+
+/* buttons / secondary */
+background: #84F0F2;
+border: 2px solid #000000;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+button {
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

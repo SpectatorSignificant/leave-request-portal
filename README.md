@@ -27,7 +27,7 @@ You may use `node` instead of `nodemon`
 
 ### Prerequisites
 
-You will need to install Nodejs and NPM to run this application.
+You will need to install Nodejs, NPM, and MongoDB to run this application.
 
 
 ## Usage
@@ -41,8 +41,7 @@ Login to the user portal using DAuth. Login to the admin portal using the creden
 - Approve or Deny incoming requests using the admin portal
 - View pending and past requests
 
-The application is pretty secure because it fetches details such as name, email, phone number from DAUth and hence prevents fraudulent submissions.
+The application is pretty secure because it fetches details such as name, email, phone number from DAuth and auto-fills them.
 
 Features to be implemented include:
-- A security feature to identify fraudulent screenshots using a moving animation that will authenticate the screen
-- a QR code that can be scanned to verify an approved request and record when a student is leaving the hostel. Saves time and paper. Details are verified and updated automatically in the backend
+- a QR code that can be scanned to verify an approved request. Details are verified and updated automatically in the backend

@@ -70,8 +70,8 @@ const userDataSchema = new mongoose.Schema({
     hostelName : {type: String, default: ""},
     roomNumber : {type: Number, default: ""},
     destinationAddress : {type: String, default: ""},
-    pending: {type: [mongoose.Schema.ObjectId], default: []},
-    past: {type: [mongoose.Schema.ObjectId], default: []}
+    pending: {type: [{type: mongoose.Schema.ObjectId, unique: true}], default: []},
+    past: {type: [{type: mongoose.Schema.ObjectId, unique: true}], default: []}
 });
 
 const UserData = mongoose.model("User", userDataSchema);
@@ -79,8 +79,8 @@ const UserData = mongoose.model("User", userDataSchema);
 const adminSchema = new mongoose.Schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
-    pending: {type: [mongoose.Schema.ObjectId], default: []},
-    past: {type: [mongoose.Schema.ObjectId], default: []}
+    pending: {type: [{type: mongoose.Schema.ObjectId, unique: true}], default: []},
+    past: {type: [{type: mongoose.Schema.ObjectId, unique: true}], default: []}
 });
 
 const adminData = mongoose.model("Admin", adminSchema);

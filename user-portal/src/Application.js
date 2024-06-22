@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import Form from "./Form";
+import "./Application.css"
 
-class Home extends Component {
+class Application extends Component {
     constructor(props){
         super(props);
 
@@ -53,13 +54,16 @@ class Home extends Component {
 
     render() {
       return (
-        <div>
-            <h2>Send a new request for leave</h2>
+        <div id='wrapper'>
+            <div id='application-container'>
+            <h1>Send a new request for leave</h1>
             {this.state.accessToken && <Form accessToken={this.state.accessToken}/>}
             {/* <button onClick={this.handleLogout}>Logout</button> */}
         </div>
+        </div>
+
       );
     }
   }
 
-export default Home;
+export default Application;
